@@ -9,6 +9,7 @@ input[type='reset'],
 input[type='submit']
 	background-color: $color-primary
 	border: .1rem solid $color-primary
+	font-family: $primary-font
 	border-radius: .4rem
 	color: $color-initial
 	cursor: pointer
@@ -79,4 +80,42 @@ input[type='submit']
 			&:focus,
 			&:hover
 				color: $color-primary
+	&.button-valid
+		background-color: $color-valid
+		border: .1rem solid $color-valid
 
+		&:focus,
+		&:hover
+			background-color: $color-valid-hover
+			border-color:  $color-valid-hover
+			color: $color-initial
+			outline: 0
+	
+		&[disabled]
+			cursor: default
+			opacity: .5
+	
+			&:focus,
+			&:hover
+				background-color: $color-primary
+				border-color: $color-primary
+
+	&.button-error
+		background-color: $color-error
+		border: .1rem solid $color-error
+
+		&:focus,
+		&:hover
+			background-color: $color-error-hover
+			border-color: $color-error-hover
+			color: $color-initial
+			outline: 0
+	
+		&[disabled]
+			cursor: default
+			opacity: .5
+	
+			&:focus,
+			&:hover
+				background-color: $color-primary
+				border-color: $color-primary
