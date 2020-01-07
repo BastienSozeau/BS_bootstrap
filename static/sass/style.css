@@ -8,14 +8,16 @@ html {
   font-size: 62.5%; }
 
 body {
-  color: #606c76;
-  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  color: #2d2d2d;
+  font-family: "Public Sans", sans-serif;
   font-size: 1.6em;
   font-weight: 300;
   letter-spacing: .01em;
   line-height: 1.6; }
 
 blockquote {
+  font-family: "EB Garamond", serif;
+  font-size: 1.6em;
   border-left: 0.3rem solid #d1d1d1;
   margin-left: 0;
   margin-right: 0;
@@ -28,8 +30,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  background-color: #9b4dca;
-  border: 0.1rem solid #9b4dca;
+  background-color: #d80b0b;
+  border: 0.1rem solid #d80b0b;
   border-radius: .4rem;
   color: #fff;
   cursor: pointer;
@@ -53,8 +55,8 @@ input[type='submit'] {
   input[type='reset']:hover,
   input[type='submit']:focus,
   input[type='submit']:hover {
-    background-color: #606c76;
-    border-color: #606c76;
+    background-color: #2d2d2d;
+    border-color: #2d2d2d;
     color: #fff;
     outline: 0; }
   .button[disabled],
@@ -73,15 +75,15 @@ input[type='submit'] {
     input[type='reset'][disabled]:hover,
     input[type='submit'][disabled]:focus,
     input[type='submit'][disabled]:hover {
-      background-color: #9b4dca;
-      border-color: #9b4dca; }
+      background-color: #d80b0b;
+      border-color: #d80b0b; }
   .button.button-outline,
   button.button-outline,
   input[type='button'].button-outline,
   input[type='reset'].button-outline,
   input[type='submit'].button-outline {
     background-color: transparent;
-    color: #9b4dca; }
+    color: #d80b0b; }
     .button.button-outline:focus, .button.button-outline:hover,
     button.button-outline:focus,
     button.button-outline:hover,
@@ -92,8 +94,8 @@ input[type='submit'] {
     input[type='submit'].button-outline:focus,
     input[type='submit'].button-outline:hover {
       background-color: transparent;
-      border-color: #606c76;
-      color: #606c76; }
+      border-color: #2d2d2d;
+      color: #2d2d2d; }
     .button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
     button.button-outline[disabled]:focus,
     button.button-outline[disabled]:hover,
@@ -104,7 +106,7 @@ input[type='submit'] {
     input[type='submit'].button-outline[disabled]:focus,
     input[type='submit'].button-outline[disabled]:hover {
       border-color: inherit;
-      color: #9b4dca; }
+      color: #d80b0b; }
   .button.button-clear,
   button.button-clear,
   input[type='button'].button-clear,
@@ -112,7 +114,7 @@ input[type='submit'] {
   input[type='submit'].button-clear {
     background-color: transparent;
     border-color: transparent;
-    color: #9b4dca; }
+    color: #d80b0b; }
     .button.button-clear:focus, .button.button-clear:hover,
     button.button-clear:focus,
     button.button-clear:hover,
@@ -124,7 +126,7 @@ input[type='submit'] {
     input[type='submit'].button-clear:hover {
       background-color: transparent;
       border-color: transparent;
-      color: #606c76; }
+      color: #2d2d2d; }
     .button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
     button.button-clear[disabled]:focus,
     button.button-clear[disabled]:hover,
@@ -134,7 +136,7 @@ input[type='submit'] {
     input[type='reset'].button-clear[disabled]:hover,
     input[type='submit'].button-clear[disabled]:focus,
     input[type='submit'].button-clear[disabled]:hover {
-      color: #9b4dca; }
+      color: #d80b0b; }
 
 code {
   background: #f4f5f6;
@@ -146,7 +148,7 @@ code {
 
 pre {
   background: #f4f5f6;
-  border-left: 0.3rem solid #9b4dca;
+  border-left: 0.3rem solid #d80b0b;
   overflow-y: hidden; }
   pre > code {
     border-radius: 0;
@@ -186,7 +188,7 @@ select {
   input[type='url']:focus,
   textarea:focus,
   select:focus {
-    border-color: #9b4dca;
+    border-color: #d80b0b;
     outline: 0; }
 
 select {
@@ -320,10 +322,10 @@ input[type='radio'] {
       padding: 0 1.0rem; } }
 
 a {
-  color: #9b4dca;
+  color: #d80b0b;
   text-decoration: none; }
   a:focus, a:hover {
-    color: #606c76; }
+    color: #2d2d2d; }
 
 dl,
 ol,
@@ -394,7 +396,8 @@ strong {
   font-weight: bold; }
 
 p {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: "EB Garamond", serif; }
 
 h1,
 h2,

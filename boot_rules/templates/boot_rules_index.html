@@ -1,11 +1,9 @@
 {% extends "head.html" %}
 {% block page_content %}
-<div class="col-md-8 offset-md-2">
-    <h1>boot_rules Index</h1>
-    <hr>
+<div class="post-card">
     {% for post in posts %}
     <h2><a href="{% url 'boot_rules_detail' post.pk%}">{{ post.title }}</a></h2>
-    <small>
+    <p>
         {{ post.created_on.date }} |&nbsp;
         Categories:&nbsp;
         {% for category in post.categories.all %}
@@ -13,7 +11,7 @@
             {{ category.name }}
         </a>&nbsp;
         {% endfor %}
-    </small>
+    </p>
     <p>{{ post.body | slice:":400" }}...</p>
     {% endfor %}
 </div>
