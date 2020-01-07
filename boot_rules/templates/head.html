@@ -7,7 +7,13 @@
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,800,800i|Public+Sans:400,400i,700,900&display=swap" rel="stylesheet">
 
 	{% load static %}
-	<link href="{% static 'site-style.css' %}" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="{% static 'site-style.css' %}" type="text/css" />
+	<link rel="stylesheet" href="{% static 'css/monokai-sublime.css' %}">
+
+	<script src="{% static 'js/highlight.js' %}"></script>
+
+	<script>hljs.initHighlightingOnLoad();</script>
 
 	{% load sass_tags %}
 	<link href="{% sass_src 'sass/style.sass' %}" rel="stylesheet" type="text/css" />
@@ -28,4 +34,5 @@
 	<div class="wrapper">
 		{% block page_content %}{% endblock %}
 	</div>
+
 {% include "footer.html" %}

@@ -118,12 +118,15 @@ USE_L10N = True
 
 USE_TZ = True
 
+COMPRESS_ENABLED=True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+
 PROJECT_ROOT = os.path.abspath(os.path.join(__file__, os.path.pardir))
 
 STATICFILES_FINDERS = [
@@ -132,8 +135,10 @@ STATICFILES_FINDERS = [
     'sass_processor.finders.CssFinder',
 ]
 
+
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, 'static'),
+    
 ]
 
 SASS_PROCESSOR_ENABLED = True

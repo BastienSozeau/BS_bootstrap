@@ -148,7 +148,6 @@ code {
 
 pre {
   background: #f4f5f6;
-  border-left: 0.3rem solid #d80b0b;
   overflow-y: hidden; }
   pre > code {
     border-radius: 0;

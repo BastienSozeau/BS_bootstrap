@@ -408,3 +408,14 @@ nav.menu li a:hover {
 	border-bottom: 2px solid black;
 	color: #d80b0b !important;
 }
+
+
+pre {
+}
+pre > code{
+}
+
+pre code p {
+    font-family: "Public Sans", sans-serif;
+    margin: 0;
+}

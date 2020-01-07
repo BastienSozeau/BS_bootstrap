@@ -12,5 +12,7 @@
         {% endfor %}
     </small>
     <p>{{ post.body | safe }}</p>
+    <p>{{ post.element }}</p>
+    <p>{{ post.scss | linebreaks }}</p>
 </div>
 {% endblock %}

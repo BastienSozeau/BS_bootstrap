@@ -2,8 +2,9 @@
 {% block page_content %}
 <div class="post-card">
     {% for post in posts %}
-    <h2><a href="{% url 'boot_rules_detail' post.pk%}">{{ post.title }}</a></h2>
-    <p>
+    <h3>{{ post.title }}</h3>
+    <!--<a href="{% url 'boot_rules_detail' post.pk%}">{{ post.title }}</a>
+	<p>
         {{ post.created_on.date }} |&nbsp;
         Categories:&nbsp;
         {% for category in post.categories.all %}
@@ -12,7 +13,11 @@
         </a>&nbsp;
         {% endfor %}
     </p>
-    <p>{{ post.body | slice:":400" }}...</p>
+    -->
+    <p>{{ post.body | safe }}</p>
+    <p>{{ post.element }}</p>
+    <pre><code>{{ post.scss | linebreaks }}</code></pre>
+
     {% endfor %}
 </div>
 {% endblock %}
