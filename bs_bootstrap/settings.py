@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'admin_interface',
     'colorfield',
+    'sass_processor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -122,8 +123,25 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
+PROJECT_ROOT = os.path.abspath(os.path.join(__file__, os.path.pardir))
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
+]
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
+    os.path.join(PROJECT_ROOT, 'static'),
 ]
+
+SASS_PROCESSOR_ENABLED = True
+
+SASS_PROCESSOR_CUSTOM_FUNCTIONS = {
+    'get-width': 'tests.get_width',
+    'get-margins': 'tests.get_margins',
+    'get-plain-color': 'tests.get_plain_color',
+}
+
+SASS_BLUE_COLOR = '#0000ff'
