@@ -59,7 +59,7 @@ ROOT_URLCONF = 'bs_bootstrap.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['bootstrap/templates/'],
+        'DIRS': ['boot_rules/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
