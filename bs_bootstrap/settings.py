@@ -118,13 +118,12 @@ USE_TZ = True
 
 COMPRESS_ENABLED=True
 
-DISABLE_COLLECTSTATIC=1
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 PROJECT_ROOT = os.path.abspath(os.path.join(__file__, os.path.pardir))
 
