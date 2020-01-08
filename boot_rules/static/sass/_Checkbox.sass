@@ -20,10 +20,12 @@ input[type='checkbox']
     width: 20px
     height: 20px
     background: white
+    border: 2px solid $color-quaternary
+    border-radius: 3px
 
   // Box hover
   &:hover + label:before
-    background: #f35429
+    background: $color-primary
   
   // Box focus
   &:focus + label:before
@@ -31,7 +33,7 @@ input[type='checkbox']
 
   // Box checked
   &:checked + label:before
-    background: #f35429
+    background: $color-primary
   
   // Disabled state label.
   &:disabled + label
@@ -48,9 +50,51 @@ input[type='checkbox']
     content: ''
     position: absolute
     left: 5px
-    top: 9px
+    top: 12px
     background: white
     width: 2px
     height: 2px
     transform: rotate(45deg)
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white
 
+
+
+/* Custom radio buttons */
+input[type="radio"] + label
+  display: inline-block
+  cursor: pointer
+  position: relative
+  padding-left: 30px
+  margin-right: 15px
+  font-size: 13px
+  
+  &:before
+    content: ""
+    display: block
+    width: 22px
+    height: 22px
+    margin-right: 14px
+    position: absolute
+    top: -3px
+    left: 0
+    border: 1px solid #aaa
+    background-color: #fff
+    border-radius: 50%
+
+
+
+input[type="radio"]
+  display: none !important
+  *display: inline
+  
+  &:checked + label:after
+    content: ""
+    display: block
+    position: absolute
+    top: 3px
+    left: 6px
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    background: #b7b7b7
+    
