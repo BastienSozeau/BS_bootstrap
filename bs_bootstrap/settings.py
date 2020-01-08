@@ -118,6 +118,7 @@ USE_TZ = True
 
 COMPRESS_ENABLED=True
 
+DISABLE_COLLECTSTATIC=1
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
