@@ -1,8 +1,9 @@
 ## BS_bootstrap
 
-![screenshot](https://raw.githubusercontent.com/BastienSozeau/BS_bootstrap/master/boot_rules/static/img/screenshot.png)
+<a align="center" href="https://bs-bootstrap.herokuapp.com"><img width="100%" src="https://raw.githubusercontent.com/BastienSozeau/BS_bootstrap/master/boot_rules/static/img/screenshot.png" alt="BS_bootstrap"></a>
 
-My first Django app, a simple website showcasting a minimal Sass bootstrap. 
+
+My first Django app, a simple website showcasting a minimal Sass bootstrap.  
 BS_bootstrap is deployed on heroku here [bs-bootstrap.herokuapp.com](https://bs-bootstrap.herokuapp.com/) 
 
 
