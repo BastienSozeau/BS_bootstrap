@@ -2,44 +2,19 @@
 {% block page_content %}
 	<div class="menu_rules">
 		<ul>
-			<li><a href="#Base">Base</a></li>
-			<li><a href="#Color">Color</a></li>
-			<li><a href="#Image">Image</a></li>
-			<li><a href="#Spacing">Spacing</a></li>
-			<li><a href="#Link">Link</a></li>
-			<li><a href="#Typography">Typography</a></li>
-			<li><a href="#Blockquote">Blockquote</a></li>
-			<li><a href="#Button">Button</a></li>
-			<li><a href="#List">List</a></li>
-			<li><a href="#Form">Form</a></li>
-			<li><a href="#Table">Table</a></li>
-			<li><a href="#Grid">Grid</a></li>
-			<li><a href="#Code">Code</a></li>
-			<li><a href="#Utility">Utility</a></li>
+	{% for post in posts %}
+			<li><a href="#{{ post.title | slugify }}">{{ post.title }}</a></li>
+	{% endfor %}
 		</ul>
 	</div>
-		
-    {% for post in posts %}
-	<div class="post-card" id="{{ post.title }}">
-	    
-	    <h3>{{ post.title }}</h3>
-	    <!--<a href="{% url 'boot_rules_detail' post.pk%}">{{ post.title }}</a>
-		<p>
-	        {{ post.created_on.date }} |&nbsp;
-	        Categories:&nbsp;
-	        {% for category in post.categories.all %}
-	        <a href="{% url 'boot_rules_category' category.name %}">
-	            {{ category.name }}
-	        </a>&nbsp;
-	        {% endfor %}
-	    </p>
-	    -->
-	    <p>{{ post.body | safe }}</p>
-	    <p>{{ post.elements | safe }}</p>
-	    {% if post.scss %}
+	{% for post in posts %}
+	<div class="post-card" id="{{ post.title | slugify }}">
+		<h3>{{ post.title }}</h3>
+		<p>{{ post.body | safe }}</p>
+		<p>{{ post.elements | safe }}</p>
+		{% if post.scss %}
 			<pre><code class="language-sass">{{ post.scss }}</code></pre>
 		{% endif %}
 	</div>
-    {% endfor %}
-
+	{% endfor %}
 {% endblock %}

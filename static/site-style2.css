@@ -468,3 +468,6 @@ main article header h4 {
     margin: 0;
     padding: .3em 0.7em;
 }
+main article .bloccolor {
+	display:block;height:10px;width:200px;
+}
