@@ -20,5 +20,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('boot_rules.urls')),
     path('rules/', include('boot_rules.urls')),
-    path("blog/", include("blog.urls")),
 ]
