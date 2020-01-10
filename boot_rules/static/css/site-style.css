@@ -1,7 +1,9 @@
 #header {
-    width: 100%;
-    margin: 8em auto 1em auto;
-    max-width: 1000px;
+    text-align: left;
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 0 0 15%;
+    padding: 2em 3em;
 }
 
 .logo {
@@ -9,7 +11,7 @@
     font-family: 'Public Sans';
     font-weight: 900;
     text-transform: uppercase;
-    text-align: center;
+    /* text-align: center; */
 }
 
 body {
@@ -18,15 +20,15 @@ body {
 
 .wrapper {
     max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    width: 85%;
+    margin: 0 0 0 15%;
     background: white;
-    padding: 2em 3em
+    padding: 2em 3em;
 }
 
 nav.menu ul {
     margin: 2em auto;
-    text-align: center
+    /* text-align: center */
 }
 
 nav.menu li {
@@ -52,12 +54,12 @@ pre code p {
     margin: 0;
 }
 
-.container .row {
+.container .row.demo {
     margin: 10px 0;
     padding: 0 1.0rem;
 }
 
-.container .row .column {
+.container .row .column.demo {
     background: gainsboro;
     margin: 10px;
     border-radius: 2px;
@@ -65,12 +67,12 @@ pre code p {
 }
 
 .post-card {
-    padding: 0em 0 5em 0;
+    padding: 0.5em 0 5em 0;
 }
 
 .menu_rules li {
-    display: inline-block;
-    margin: 0 0.3em 0.9em;
+    display: block;
+    margin: 1em 0.3em 0.9em;
 }
 
 .menu_rules li a {
@@ -84,11 +86,11 @@ pre code p {
     font-size: 1em;
     position: fixed;
     top: 0;
-    width: 100%;
     background: white;
     left: 0;
     padding: 1em 1em 0.4em;
-    text-align: center;
+    z-index: 1;
+    height: 100%;
 }
 
 .menu_rules ul {
@@ -120,4 +122,22 @@ main article header h4 {
     padding: 0.6em;
     margin: 0.7em 0;
     border-radius: 5px;
+}
+
+.the-icons {
+    justify-content: space-between;
+    width: 25%;
+}
+
+span.i-code {
+    display: none;
+}
+
+i.demo-icon {
+    font-size:1.4em
+}
+
+span.i-name {
+    font-size: 0.8em;
+    margin-left: 0.9em;
 }

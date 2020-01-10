@@ -89,6 +89,7 @@ pre code p {
     left: 0;
     padding: 1em 1em 0.4em;
     text-align: center;
+    z-index: 1;
 }
 
 .menu_rules ul {
@@ -120,4 +121,22 @@ main article header h4 {
     padding: 0.6em;
     margin: 0.7em 0;
     border-radius: 5px;
+}
+
+.the-icons {
+    justify-content: space-between;
+    width: 25%;
+}
+
+span.i-code {
+    display: none;
+}
+
+i.demo-icon {
+    font-size:1.4em
+}
+
+span.i-name {
+    font-size: 0.8em;
+    margin-left: 0.9em;
 }
