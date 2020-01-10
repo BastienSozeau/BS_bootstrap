@@ -5,3 +5,9 @@
 {% block extrahead %}
 	<link rel="icon" href="{% static 'img/favicon.png' %}" />
 {% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">BS bootstrap</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

@@ -407,7 +407,8 @@ pre[class*="language-"] {
   background: #2d2d2d;
   padding: .1em;
   border-radius: .3em;
-  white-space: normal; }
+  white-space: normal;
+  max-height: 70vh; }
 
 .token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata {
   color: #999; }
@@ -457,6 +458,7 @@ input[type='text'],
 input[type='url'],
 textarea,
 select {
+  font-family: "Public Sans", sans-serif;
   appearance: none;
   background-color: transparent;
   border: 0.1rem solid #d1d1d1;
@@ -489,6 +491,7 @@ textarea {
 
 label,
 legend {
+  font-family: "Public Sans", sans-serif;
   display: block;
   font-size: 1.6rem;
   font-weight: 700;
@@ -790,6 +793,9 @@ h6 {
   line-height: 1.4; }
 
 img {
+  max-width: 100%; }
+
+iframe {
   max-width: 100%; }
 
 .clearfix:after {
