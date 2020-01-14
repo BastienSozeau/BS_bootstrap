@@ -1,20 +1,45 @@
 {% extends "head.html" %}
 {% block page_content %}
-	<div class="menu_rules">
-		<ul>
+	<div class="bs--menu bs--menu-border bs--menu-vertical rd menu_rules">
+		<div id="menu_mob-trigger">
+			<span class="menu_mob__line"></span>
+			<span class="menu_mob__line"></span>
+			<span class="menu_mob__line"></span>
+		</div>
 	{% for post in posts %}
-			<li><a href="#{{ post.title | slugify }}">{{ post.title }}</a></li>
+		<a class="bs--menu-item" href="#{{ post.title | slugify }}">{{ post.title }}</a>
 	{% endfor %}
-		</ul>
 	</div>
 	{% for post in posts %}
 	<div class="post-card" id="{{ post.title | slugify }}">
 		<h3>{{ post.title }}</h3>
 		<p>{{ post.body | safe }}</p>
-		<p>{{ post.elements | safe }}</p>
+		<div class="element-demo">{{ post.elements | safe }}</div>
+		
+
+		<div class="bs--menu bs--menu-tabs bs--menu-invert trigger-tabs">
 		{% if post.scss %}
-			<pre><code class="language-sass">{{ post.scss }}</code></pre>
+		  <a href="#" class="bs--menu-item active" data-target="sass">Sass</a>
 		{% endif %}
+		{% if post.elements %}
+		  <a href="#" class="bs--menu-item" data-target="html">Html</a>
+		{% endif %}
+		</div>
+
+		<div class="code-wrap">
+			{% if post.scss %}
+			<div class="element-code element-code-sass">
+				<pre><code class="language-sass">{{ post.scss }}</code></pre>
+			</div>
+			{% endif %}
+	
+			{% if post.elements %}
+			<div class="element-code element-code-html" style="display: none">
+				<pre><code class="language-html">{{ post.elements }}</code></pre>
+			</div>
+			{% endif %}
+		</div>
+
 	</div>
 	{% endfor %}
 {% endblock %}

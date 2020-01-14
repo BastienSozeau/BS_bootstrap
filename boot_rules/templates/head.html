@@ -23,13 +23,12 @@
 <body>
 	<header id="header">
 		<div class="logo">BS_Bootsrap</div>		
-		<nav class="menu">
-			<ul>
-				<li><a href="/admin">Dashboard</a></li>
-				<li><a href="/">Homepage</a></li>
-				<li><a href="https://github.com/BastienSozeau/BS_bootstrap" target="_blank">Github</a></li>
-			</ul>
-		</nav>
+		<div class="bs--menu bs--menu-border">
+		  <a class="bs--menu-item" href="/admin"><div class="icon-gauge"></div>Dashboard</a>
+		  <a class="bs--menu-item" href="/"><div class="icon-home"></div>Homepage</a>
+		  <a class="bs--menu-item" href="https://github.com/BastienSozeau/BS_bootstrap" target="_blank"><div class="icon-github"></div>Github</a>
+		</div>
+
 	</header>
 	<div class="wrapper">
 		{% block page_content %}{% endblock %}
