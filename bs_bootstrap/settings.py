@@ -118,7 +118,7 @@ USE_TZ = True
 
 COMPRESS_ENABLED=True
 
-SASS_OUTPUT_STYLE = 'compact'
+SASS_OUTPUT_STYLE = 'compressed'
 
 
 # Static files (CSS, JavaScript, Images)

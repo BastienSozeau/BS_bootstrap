@@ -3,7 +3,6 @@
 
 
 input[type='email'],
-input[type='number'],
 input[type='password'],
 input[type='search'],
 input[type='tel'],
@@ -15,7 +14,7 @@ select
 	appearance: none // Removes awkward default styles on some inputs for iOS
 	background-color: transparent
 	border: .1rem solid $color-mediumgrey
-	border-radius: .4rem
+	border-radius: $radius
 	box-shadow: none
 	box-sizing: inherit // Forced to replace inherit values of the normalize.css
 	height: 3.8rem
@@ -29,12 +28,14 @@ select
 select
 	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat
 	padding-right: 3.0rem
+	height: 3.8rem
 
 	&:focus
 		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>')
 
 textarea
 	min-height: 6.5rem
+	height: auto
 
 label,
 legend

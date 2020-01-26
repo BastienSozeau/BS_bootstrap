@@ -6,7 +6,7 @@ from boot_rules.models import Post, Comment
 
 
 def boot_rules_index(request):
-    posts = Post.objects.all().order_by('-id')
+    posts = Post.objects.filter(status=1).order_by('-id')
     context = {
         "posts": posts,
     }

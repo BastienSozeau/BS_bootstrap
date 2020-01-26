@@ -31,9 +31,12 @@ body {
 }
 
 .container .row .column.demo {
-    background: gainsboro;
     margin: 10px;
     border-radius: 2px;
+}
+
+#grid .column.demo {
+    background: gainsboro;
     padding: 10px 20px;
 }
 
@@ -45,7 +48,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 4;
     height: 100%;
     background: white;
     margin: 0;
@@ -106,6 +109,13 @@ span.i-name {
 
 .bs--menu-tabs {
     border-radius: 3px 3px 0px 0px;
+}
+
+#header .bs--menu {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 3;
 }
 
 #menu_mob-trigger {
@@ -205,3 +215,4 @@ span.i-name {
         display: block;
     }
 }
+

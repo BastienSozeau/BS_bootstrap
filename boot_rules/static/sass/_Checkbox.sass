@@ -21,7 +21,7 @@ input[type='checkbox'].checkbox
     height: 20px
     background: white
     border: 2px solid $color-mediumgrey
-    border-radius: 3px
+    border-radius: $radius
 
   // Box hover
   &:hover + label:before
@@ -73,7 +73,7 @@ input[type='checkbox'].onoff
             background: $color-lightgrey
             width: 2.7em
             height: 1.5em
-            border-radius: 1.5em
+            border-radius: $radius
             position: relative
             cursor: pointer
             overflow: hidden
@@ -87,7 +87,7 @@ input[type='checkbox'].onoff
             height: 1.2em
             margin-top: 0.12em
             margin-left: 0.15em
-            border-radius: 2em
+            border-radius: $radius
             background: white
             box-shadow: -1px 2px 4px 0px $color-mediumgrey
             transition: transform 0.2s ease-in
